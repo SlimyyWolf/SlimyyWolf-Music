@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Music Collection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #000000;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+
+    <link rel="stylesheet" href="backround color.css"
+    
+<section class="hero">
+    <div class="hero-container">
+        <div class="column-left">
+  <h1>
+    My Music Collection
+  </h1>
+  
+  
+  <!-- Song 1 Button -->
+  <button onclick="playMusic('Cybermt1c.mp3')">Cyberm@t1c</button>
+  
+  
+
+  <!-- Audio Player (Hidden initially) -->
+  <audio id="audioPlayer" controls style="display:none;">
+    <source src="" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function playMusic(songUrl) {
+      var player = document.getElementById('audioPlayer');
+      player.style.display = 'block'; // Show the audio player when a song is clicked
+      player.src = songUrl; // Update the audio source
+      player.play(); // Start playing the song
+    }
+  </script>
+
+</body>
+</html>
